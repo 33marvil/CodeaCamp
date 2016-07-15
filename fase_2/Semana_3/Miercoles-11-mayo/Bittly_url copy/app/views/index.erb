@@ -1,0 +1,28 @@
+<h1>Bienvenido a Bitly Pirato!</h1>
+<p>Esta Es una página para generar url's cortas :D </p>
+<p>Ejemplo url: </p>
+<form action='/urls' method="post">
+  Url:<br>
+  <input type="text" name="url" placeholder="http://www.algo.com"><br>
+  <input type="submit" value="Bitleala">
+</form>
+
+<% if @message && session[:message] != nil %>
+  <p><%= @message %></p>
+  <!--Cambio el valor de mensaje para que si se actualiza no salga ningun mensaje-->
+  <% session[:message] = nil %>
+<% end %>
+
+<!-- Hacer que lo muestre al revez de la base de datos para que muestre la que se busco en orden descendente-->
+<% if @all_url %>  
+  <h3>Lista de Url's</h3>
+  <% @all_url.each do |url| %>
+    <p>Url original: <%= url.long_url %></p><br>
+    <p>Url short: <a href="/<%= url.short_url %>" id="url-izq"><%= url.short_url %></a></p>
+    <p id="url-der">Url visits: <%= url.clock_coun %></p>
+    <div class="clear"></div>
+    <hr>
+  <% end %>
+<% end %>
+
+

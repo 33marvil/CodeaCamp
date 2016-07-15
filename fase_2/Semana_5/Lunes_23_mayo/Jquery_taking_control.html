@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>css demo</title>
+  <style>
+  .colores{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    float: left;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body style="background-color:#00ADFF;">
+<button id="boton">Clic me</button>
+<span id="result">&nbsp;</span>
+<div class="colores" style="background-color:blue;"></div>
+<div class="colores" style="background-color:rgb(15,99,30);"></div>
+<div class="colores" style="background-color:#123456;"></div>
+<div class="colores" style="background-color:#f11;"></div>
+<br>
+<div id="img">
+  <img id="codea" src="http://locomotion.mx/assets/codeacamp_logo-d00e28326ca4ba35c48d58af090ee7df.png">
+</div>
+<br>
+<button id="boton2">Dame clic</button>
+
+<script>
+//metodo para ver de que color es un div 
+$( "div" ).click(function() {
+  var color = $( this ).css( "background-color" );
+  $( "#result" ).html( "That div is <span style='color:" +
+    color + ";'>" + color + "</span>." );
+});
+</script>
+<script>
+//Metodo para cambiar la imagen al darle clic 
+//Cuando se le de clic a la imagen cambiara por otra imagen
+  $("#img").click(function(){
+    //serach in how div some id "codea" and change it the src to a new src.
+    $("div").find("#codea").attr('src', 'http://static.jquery.com/files/rocker/images/logo_jquery_215x53.gif');
+  });
+</script>
+<script>
+//metodo para animar las cosas al darle clic a un boton
+//al darle clic al boton con id boton hara una funcion
+  $("#boton").click(function(){
+    //todos los elementos que esten en la clase colores les pondra una animacion
+    $(".colores").animate({
+      //reducira su opacidad a 0.50
+      opacity: 0.50,
+      //aumentara su width en 200px
+      width: "200px",
+      //aumentara su height en 200px
+      height: "200px",
+      //Ponerle en cuantos microsegundos hacer la funcion
+    }, 1000, function(){
+    });
+  });
+</script>
+<script>
+//Al darle click al boton con id se agregara un evento click a el boton con id seleccionado
+  $("#boton2").on('click',function(event){
+    //todos los elementos que esten en la clase colores les pondra una animacion
+    $(".colores").animate({
+      left: "+=10",
+      border: "30px solid red",
+      margin: "0px",
+      width: "toogle",
+      height: "toogle",
+      opacity: 0.25,
+      //duracion de la funcion
+    }, 1000, function(){
+    });
+  });
+</script>
+ 
+</body>
+</html>

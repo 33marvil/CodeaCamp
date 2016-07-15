@@ -1,0 +1,36 @@
+.container {
+  margin: 0 auto;  
+  width: 750px;
+}/*
+.feature{
+  
+}*/
+#que_hacemos{
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+}/*
+#pricing{
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  /*-moz-column-count: 3; /* Firefox */
+  /*column-count: 3;
+}*/
+/*Codigo para hacer que el layout sea de 3 columnas en las
+clases especificas que el usuario quiera
+Esta es para la que estara a la izquierda*/
+.pricing_features1{ 
+  float: left; width: 33%; 
+}/*Esta es para la que estara al centro*/
+.pricing_features3{ 
+  float: right; width: 33%;
+}/*Esta es para la que estara en el centro*/
+.pricing_features2{ 
+  display: inline-block; width: 33%; 
+}
+#pricing ul li{
+  list-style: square;
+
+}
+#pricing h5{
+  text-align: center;
+}

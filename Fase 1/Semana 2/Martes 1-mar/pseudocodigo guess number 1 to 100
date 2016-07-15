@@ -1,0 +1,23 @@
+Programa para adivinar el numero entre el 1 y el 100 que el usuario piense
+Crear metodo guess_number
+  Con el numero que el usuario dio
+  Partir el array a la mitad
+  si el numero esta en la primera mitad
+    volver a partir el array
+    Preguntar en que mitad esta
+    si el numero esta en la primera mitad 
+      dar el indice del numero
+    otro 
+      el numero esta en la otra mitad y se regresa el indice
+    fin if
+  otro si el numero no estaba en la primera mitad
+    volver a partir el array
+    preguntar en que nueva mitad se encuentra el numero
+    si el numero se encuentra en la primera mitad
+      regresar el indice del numero donde esta
+    otro
+      el numero esta en la otra nueva mitad 
+      se regresa el indice donde esta el numero
+    fin if
+  fin primer if
+fin metodo

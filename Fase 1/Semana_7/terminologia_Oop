@@ -1,0 +1,23 @@
+Herencia: Sirve para crear una nueva clases con los metodos de una clase maestra sin tener que volver a crearlos de nuevo.
+
+Comppsicion: Utilizar objetos dentro de otros objetos.
+
+Encapsulamiento: dar atributos a los datos de un objeto para que los pueda ver quien los use
+
+Duck typing: Metodos con datos especificos para los objetos a crear.
+
+Ley de Demeter: Cada objeto solo debe conocer poco de los demas objetos y debe conocer todo de si mismo.
+
+Overriding Methods (use of super): Usar la herencia para tener menos codigo y usar el super poder llamar a el metodo de otra clase sin tener que crear instancia.
+
+Modulos: Un módulo de clase es un archivo de código, separado del resto, que contiene una o más clases. Como es un archivo independiente, se puede reutilizar en otros proyectos. 
+
+Scope: Alcance de un metodo, objeto dentro de un programa.
+
+Metodos privados vs publicos: Los privados no se podran ver por el usuario y los publicos si, los privados sirven para guardar cosas importantes.
+
+Instancia vs metodos de clase y variables: La instancia sirve para aplicar un metodo de clase a un objeto creado, los metodos y variables de clase solo se podran llamar dentro de la clase o cuando se cree una instancia de esa clase.
+
+Polimorfismo: la capacidad que tienen los objetos de una clase de responder al mismo mensaje o evento en función de los parámetros utilizados durante su invocación
+
+Separacion de responsabilidades: Separar los procesos que debe tener nuestro programa en metodos para no tener un metodo muy grande y tener metodos cortos para mayor efectividad.

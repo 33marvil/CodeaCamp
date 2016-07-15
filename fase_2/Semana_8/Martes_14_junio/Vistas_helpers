@@ -1,0 +1,48 @@
+Vistas
+
+Como decide Rails que vista debe renderar si no se espesifica una?
+  
+  -Con el metodo en el que este definido la vista
+
+Como puedo pasar variables a una vista o partial?
+  
+  -Diciendole a que vista pasarla la variable
+
+Que convenciones tienen los partials?
+  
+  -_partial.html.erb
+
+Como se hace render de vistas en otros formatos como JSON o Javascript?
+  
+  -format.json { render action: 'show', status: :created, location: @post }
+  format.js #{I think I need something in here?}
+
+Como se manejan los layouts en Rails?
+  
+  -Haciendo render de lo que quieres que renderee y con peticiones HTTP
+
+
+Helpers
+
+Como funciona link_to y que posibles argumentos acepta.
+  
+  -Sirve para decir a que vista ir y acepta parametro para enviar a otra vista
+
+Intenta crear tu propia implementación de este método, de esta manera comprenderás como funcionan.
+  
+  -link_to(body, url, html_options = {})
+  # url is a String; you can use URL helpers like
+  # posts_path
+
+Como funciona image_tag y donde deben de ir guardadas las imágenes para que funcione correctamente esta sintaxis.
+  
+  -Van en un directorio de images y funciona y funciona de igual que el img de html
+
+Como funciona form_for y como creas un nuevo objeto o como editas un nuevo objeto.
+
+  -Poniendo como se va a guardar y poniendo como campos de texto de ruby embedido los parametros que recibira
+
+Como funcionan las validaciones ahora y que beneficios tienes?
+Hay alguna forma de crear formas para un modelo que esta relacionado con otro?
+  
+  -Las nested forms sirven para conectar modelos, y las validaciones son en el modelo

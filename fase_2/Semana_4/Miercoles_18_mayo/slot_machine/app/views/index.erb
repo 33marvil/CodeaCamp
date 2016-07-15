@@ -1,0 +1,15 @@
+<header>
+  <img id="logo" src="codea-logo.png">
+</header>
+
+<h1>Slot Machine</h1>
+
+<div id="slot-machine">
+  <form method="post" action="/rolls">
+    <input id="submit" type="submit" value="SPIN">
+  </form>
+  <div id="die">
+    <!--Cuando entre a esta forma solo rendereara el div con las imagenes sin renderear todo el contenido-->
+    <%= erb :_die_roll, layout: false %>
+  </div>
+</div>

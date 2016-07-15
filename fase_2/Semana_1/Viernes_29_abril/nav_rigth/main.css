@@ -1,0 +1,42 @@
+.container {
+  margin: 0 auto;
+  width: 768px;
+}
+.coonten{
+  height: 643px;
+  position: absolute;
+  width: 621px!important;
+  text-align: justify;
+}
+
+header {
+  background-color: black;
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+}
+.footer{
+  border-top-style: groove;
+  padding-top: 20px;
+}
+nav{
+  float:right;
+  width: 125px;
+  height: 503px;
+  background-color: lightgray;
+}
+ul{
+  list-style: none;
+}
+li{
+  text-align: center; 
+  font-size: larger;
+  margin-top: 20px;
+  margin-left: -38px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}

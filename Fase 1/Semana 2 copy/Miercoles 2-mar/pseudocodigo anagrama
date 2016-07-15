@@ -1,0 +1,13 @@
+Pseudocodigo Para saber si una palabra es anagrama de otra
+Si la palabra tiene las mismas letras que la palabra original
+Crear metodo are_anagrams? que recibe 2 palabras como parametros
+y devolvera true o false
+fin are_anagrams?
+
+Crear metodo canonical que reciba una palabra y la regrese en un formato especifico
+el cual si comparas despues otras palabras tengan este formato
+Paso 1
+Cada palabra que me de el usuario la pasara a el mismo formato
+despues las compara para ver si son anagramas
+paso 2 regresa la palabra con el formato nuevo
+fin canonical

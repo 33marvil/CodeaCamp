@@ -1,0 +1,22 @@
+<h1>Bienvenido a Sinatra!</h1>
+<p>Este es un esqueleto de sinatra que armamos para ti</p>
+<form action='/login' method="post">
+  User email:<br>
+  <input type="text" name="useremail"><br>
+  Password:<br>
+  <input type="text" name="userpass"><br><br>
+  <input type="submit" value="Sign in">
+</form>
+<% if @message && session[:message] != nil %>
+  <p><%= @message %></p>
+  <!--Cambio el valor de mensaje para que si se actualiza no salga ningun mensaje-->
+  <% session[:message] = nil %>
+<% end %>
+
+
+
+<form action='/register' method='get'>
+  <p>Don`t have you a count?</p>
+  <input type="submit" value="Sign up">
+</form>
+

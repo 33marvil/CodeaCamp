@@ -1,0 +1,17 @@
+sqlite> UPDATE usuarios
+   ...> SET apellido = 'Rivero'
+   ...> WHERE id = 1;
+sqlite> select * from usuarios;
+id          nombre      apellido    email             fecha_nacimiento  genero      apodo     
+----------  ----------  ----------  ----------------  ----------------  ----------  ----------
+1           Carlos      Rivero      carlos@yahoo.com  1970-11-03        masculino   Charly    
+2           Aldo        Márquez    aldo.619_@hotmai  1997-71-08        masculino   Chato     
+sqlite> UPDATE usuarios
+   ...> SET fecha_nacimiento = '1980-11-03'
+   ...> WHERE id = 1;
+sqlite> select * FROM usuarios;
+id          nombre      apellido    email             fecha_nacimiento  genero      apodo     
+----------  ----------  ----------  ----------------  ----------------  ----------  ----------
+1           Carlos      Rivero      carlos@yahoo.com  1980-11-03        masculino   Charly    
+2           Aldo        Márquez    aldo.619_@hotmai  1997-71-08        masculino   Chato     
+sqlite> 

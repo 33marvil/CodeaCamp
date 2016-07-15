@@ -1,0 +1,31 @@
+Pseudocodigo de el programa pig latin
+
+programa que servira para cambiar las palabras dependiendo de como empieze
+Declarar metodo que reciba un string
+  Si la palabra inicia con consonante entonces
+    recorrer la(las) consonantes hasta que encuentre una vocal 
+    mover las consonantes al final del string
+    agregar string "ay" al final del nuevo string
+    #ejem: pig -> igpay, trash -> ashtray
+    imprimir la palabra nueva
+  otro 
+    mover la vocal al final de la palabra
+    agregarle string "way"
+    #ejem: egg -> ggeway 
+    imprimir la nueva palabra
+  fin if
+fin método
+
+#Pruebas
+#consonantes
+pig == igpay
+banana == ananabay
+trash == ashtray
+glove == oveglay
+
+#Pruebas
+#vocales
+egg == ggeway
+apple == ppleaway
+I == Iway
+if string[0] == "a" || string[0] == "e" || string[0] == "i" string[0] == "o" string[0] == "u"

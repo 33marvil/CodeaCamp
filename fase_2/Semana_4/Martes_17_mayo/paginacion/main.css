@@ -1,0 +1,43 @@
+.container {
+  margin: 0 auto;
+  width: 768px;
+}
+
+header {
+  background-color: black;
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+}
+
+small.page_no {
+  float: right;
+  color: #ddd;
+}
+.pagination li{
+  display: inline-block;
+  padding: 0;
+  margin: -3px;
+  text-decoration: none;
+  border: 1px solid gray !important;
+}
+.pagination ul li a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+.pagination .active{
+  background-color: #C1C0C0; 
+}
+.pagination .disabled_first{
+  color: #C3C1C1;
+  border: 1px #C3C1C1 !important;
+}
+.pagination .disabled_last{
+  color: #C3C1C1;
+  border: 1px #C3C1C1 !important; 
+}

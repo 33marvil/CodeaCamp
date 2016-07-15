@@ -1,0 +1,14 @@
+  <h1>Bienvenido a Anagramas!</h1>
+  <p>Este es un esqueleto de sinatra que armamos para ti</p>
+  <form action="/new_word" method="post">
+  Escribe palabra a ver si es anagrama
+  <br>
+  <input type="text" name="user_word">
+  <input type="submit" value="Escribe!">
+  <% if @palabra %>
+    <p>Anagramas: <bR></p>
+    <% @palabra.each do |word| %>
+      <p> <%= word.word %> <p><br>
+    <% end %>
+  <% end %>
+    

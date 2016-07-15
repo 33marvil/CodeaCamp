@@ -1,0 +1,28 @@
+Declarar un array de arrays con el nombre del alumno 
+y su calificacion
+e.j. Array = [[nombre, calificacion]]
+
+Declarar metodo best_students que recibe 1 parametro de 
+array de arrays
+
+  declarar un array vacio donde entraran los best_students
+
+  declarar variables x,y de tipo integer inicializadas en 0
+
+    Mientras la variable "y" sea menor a la longitud del parametro students:
+     
+      declarar un Array que sera igual a "y" y "x"
+        Si el segundo valor es igual a 10 entonces
+          insertar el nombre del alumno dentro del array best_students
+          en la posicion [0]
+        Termina if
+        Si el valor de x es igual a la longitud del array menos 1 entonces
+            declatrar variable x = 0 e incrementar variable y en 1
+        otro 
+            incrementar variable x en 1
+        fin de if
+      Fin del while
+    Regresar Array de best students con estudiantes que cumplieron 
+    la condición
+
+Fin del metodo best students

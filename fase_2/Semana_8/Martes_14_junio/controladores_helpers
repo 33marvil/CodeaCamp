@@ -1,0 +1,21 @@
+Cuales son por default los métodos o acciones que espera rails para un recurso CRUD. A que corresponde cada una de estas acciones conceptualmente?
+
+  -index, new, create, show, update, edit, destroy.
+
+Como se definen los before_filters y como defines que acciones utilizarán dicho filtro?
+
+  Rails:
+  -Se utilizan en el controlador de rails
+  Sinatra:
+  -Se utilizan en el modelo
+
+Como funcionan las sessiones en Rails y las coockies?
+Rails tiene una gran manera para desplegar errores en la vista, como funciona esto?
+
+  -Cookies, sirve para guardan pequeños archivos del usuario, se debe crear controlador y una vista
+  -Sessiones:Guardan informacion en el servidor. Se crea controlador con tres acciones iniciar sesion, cerrar sesion y bienvenida
+
+Finalmente que es Strong Parameters y como se utilizan?
+
+  -Sirve para proteger atributos de un usuario asignado
+  se utilizan usando el require.

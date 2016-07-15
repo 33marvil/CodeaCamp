@@ -1,0 +1,43 @@
+.container {
+  margin: 0 auto;
+  width: 768px;
+}
+
+header {
+  background-color: black;
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+a {
+  background-color: #999;
+  color: white;
+  display: block;
+  width: 182px;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  top: 600px;
+  padding: 20px 0;
+}

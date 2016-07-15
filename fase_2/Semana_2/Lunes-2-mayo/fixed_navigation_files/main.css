@@ -1,0 +1,35 @@
+.container {
+  margin: 0 auto;
+  width: 768px;
+}
+
+nav{
+  background-color: black;
+  height: 46px;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  padding-left: 17%;
+}
+li{
+  display: inline!important;
+  margin-left: 50px;
+}
+ul{
+  margin-left: 25%;
+  margin-top: -3%;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+div .container{
+  margin-top: 60px;
+}
+
+.top-nav .container{
+  width: 100%!important;
+}
+.fixed{
+  background-color: rgba(0, 0, 0, 0.8);
+}

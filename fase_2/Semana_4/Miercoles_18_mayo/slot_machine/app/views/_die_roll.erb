@@ -1,0 +1,9 @@
+<!--Iterar dentro de cada imagen con su value y si index-->
+<% @rolls.each_with_index do |value, index| %>
+  <!--Poner una imagen con un value y un index -->
+  <img src="/<%= value %>.png" title="<%= value %>" alt="the roll" id="image-<%= index + 1 %>">
+<% end %>
+<!--Si las imagenes son iguales muestra el mensaje-->
+<% if @win  %>
+  <h1 id="win"><%= @win %></h1>
+<% end %>

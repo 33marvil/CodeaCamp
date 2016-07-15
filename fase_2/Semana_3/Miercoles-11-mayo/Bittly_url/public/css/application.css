@@ -1,0 +1,46 @@
+body{
+  background-color: rgba(173, 216, 230, 0.53);
+}
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 20px dotted black;
+  background-color: rgba(0,184,255,0.25); 
+}
+th {
+  text-align: left;
+}
+
+
+p {
+ display: inline-block;
+}
+
+p#url-izq {
+  float: left;
+}
+
+p#url-der {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+hr.style {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}

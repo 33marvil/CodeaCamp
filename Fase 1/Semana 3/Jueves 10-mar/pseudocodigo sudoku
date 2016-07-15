@@ -1,0 +1,23 @@
+pseudocodigo sudoku
+Crear clase sudoku
+  
+  crear metodo initialize
+  mostrara siempe el tablero vacio
+  y al final mostrara el tablero ya lleno
+
+  crear metodo para pasar los numeros que el usuario mande
+  a forma de tablero y separar cada 3 numero y cada 3 columnas
+
+  crear metodo para saber si un numero tiene la posibilidad de entrar en la fila, en la columna y caja  en la que esta para comtemplarlo
+
+  crear metodo para llenar cada caja con un numero aleatorio
+  que no este en esa caja
+
+  crear metodo para recorrer en cada fila y ver si algun numero se repite y cambiarlo si es asi
+
+  crear metodo para recorrer cada columna y ver si algun numero se repite y cambiarlo de ser asi
+
+  Metodo de encontrar
+
+
+fin clase sudoku

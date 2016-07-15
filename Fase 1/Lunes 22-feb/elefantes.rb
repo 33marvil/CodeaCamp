@@ -1,0 +1,3 @@
+puts "escribe una palabra"
+
+

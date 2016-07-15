@@ -1,0 +1,35 @@
+<% if logged_in? %>
+  <h1>Bienvenido <%= current_user.name %></h1>
+  <form action='/url_user' method="post">
+    Url:<br>
+    <input type="text" name="url" placeholder="http://www.algo.com"><br>
+    <input type="submit" value="Bitleala">
+  </form>
+  <% if @message_user && session[:message_user] != nil %>
+    <p><%= @message_user %></p>
+    <!--Cambio el valor de mensaje para que si se actualiza no salga ningun mensaje-->
+    <% session[:message_user] = nil %>
+  <% end %>
+  <center>
+    <a href="/logout">Cerrar sesión</a>
+  </center>
+  <br>
+
+
+  <!--Mostrar las urls del usuario logeado-->
+  <p>Aqui se mostraran todas las urls de el usuario</p>
+  <br>
+  <% if @all_url_user %>
+    <h4>Lista de urls de: <%= @name %></h4>
+    <br>
+    <% @all_url_user.each do |url| %>
+   
+        <p>Url original: <%= url.long_url %></p><br>
+        <p>Url short: <a href="/<%= url.short_url %>" id="url-izq"><%= url.short_url %></a></p>
+        <p id="url-der">Url visits: <%= url.clock_coun %></p>
+        <div class="clear"></div>
+        <hr class="style">
+    
+    <% end %>
+  <% end %>
+<% end %>

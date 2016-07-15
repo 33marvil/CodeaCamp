@@ -1,0 +1,57 @@
+Como se que rutas están accesibles en mi aplicación?
+  
+  Rails:
+  -Podemos hacer uso de la gema rakefile para que nos de las rutas disponibles con
+  rake routes(Mostrara las rutas disponibles)
+
+  Sinatra:
+  -Viendo las rutas en los controladores
+
+Como se que Paths o URL helpers rails crea para mis rutas y como personalizarlos?
+
+  Rails:
+  -En config/routes.rb(hay estan todas)
+
+
+Que hace y para que sirve el método resources en mi archivo de rutas?
+
+  Rails:
+  -Sirve para declarar las rutas CRUD
+  Sinatra:
+  -se deben crear
+
+Como puedo saber que rutas crea el método resources?
+  
+  Rails:
+  -Rake routes o en config/routes.rb
+  Sinatra:
+  -Revisando el controlador
+
+Como especifico cual quiero que sea la root Url de mi aplicación?
+  RAils:
+  -Ir a config/routes.rb y especificarla
+  Sinatra:
+  -get "/"
+
+Que errores comunes puedo tener al definir mis rutas?
+  
+  Rails:
+  -Que la ruta no haya sido definida o que este mal escrita
+  Sinatra:
+  -Que no este escrita, no este definida, que los parametros esten mal
+
+Que son nested resources y para que me sirven?
+  
+  Rails:
+  -Son recursos anidados(conexion entre modelos) se hace en las routes.rb
+  Sinatra:
+  -Se crean en los modelos con las clases de activerecord
+
+Que son member routes y collection routes
+  
+  Rails:
+  -Rutas donde especificas id
+  A member route will require an ID, because it acts on a member. A collection route doesn't because it acts on a collection of objects. Preview is an example of a member route, because it acts on (and displays) a single object. Search is an example of a collection route, because it acts on (and displays) a collection of objects.
+  Sinatra:
+  -Mostrar todos los objetos(collection)
+  -Mostrar uno solo(member)

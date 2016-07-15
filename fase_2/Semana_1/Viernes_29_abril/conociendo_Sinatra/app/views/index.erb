@@ -1,0 +1,45 @@
+  <h1>Bienvenido a Sinatra!</h1>
+  <p>Este es un esqueleto de sinatra que armamos para ti y servira para mostrar como funciona sinatra</p>
+<form action="/cool_url" method="get">Escribe algo para el get :D
+<br>
+<input type="text" name="user_input">
+<input type="submit" value="Click">
+</form>
+
+
+<br>
+
+<!--Este post hara que se pase a la vista del post-->
+<form action="/cool_url" method="post">Escribe algo para el post :DDDD
+<br>
+<input type="text" name="user_input">
+<br><p>Titulo</p>
+<!--Los post del siguiente estilo haran que se guarden en un hash que se llamara post-->
+<input type="text" name="post[title]"><br><p>Precio</p>
+<input type="text" name="post[price]"><br><p>Descripcion</p>
+<textarea name="post[description]"></textarea>
+<input type="submit" value="Click">
+</form>
+<br>
+
+
+<form name="myform" action="/cool_url" method="POST">
+<div align="center"><br>
+Esta es una text area :D<br><br>
+<textarea cols="40" rows="5" name="myname">
+</textarea><br>
+<input type="submit" value="Click">
+<br><br>
+</div>
+</form>
+<!--hay varios tipos de inputs que serviran para guardar los datos el boton de submit es importante para obtener los datos y debe tener alguna accion en el controller para que se guarde o haga algo con esa informacion-->
+<form name="myform" action="/cool_url" method="get">
+<div align="center"><br>
+<p>Estos son botones para escoger algun valor</p>
+<input type="radio" name="group1" value="Milk"> Milk<br>
+<input type="radio" name="group1" value="Butter" checked> Butter<br>
+<input type="radio" name="group1" value="Cheese"> Cheese
+<input type="submit" value="Click">
+</div>
+</form>
+  

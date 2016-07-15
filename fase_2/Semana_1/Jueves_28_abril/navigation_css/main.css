@@ -1,0 +1,41 @@
+.container {
+  margin: 0 auto;
+  width: 768px;
+  position: relative;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+}
+header {
+  background-color: black;
+}
+ul{
+  list-style: none;
+}
+li{
+  text-align: center;
+  font-size: larger;
+  margin-top: 20px;
+}
+#logo {
+  display: block;
+  margin: 0 auto;
+}
+nav{ 
+  background-color: #9A9A9A;
+  width: 20%;
+  height: 80%;
+  float: left;
+  position: absolute;
+}
+.content{
+  display: table;
+  margin-left: 23%
+}
+.footer{
+  padding-left: 23%;
+  padding-top: 20px;
+  border-top-style: groove;
+  z-index: 10px;
+}
